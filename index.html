@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src='lib/jquery/jquery.min.js'></script>
+        <script src='js/jquery1.42.min.js'></script>
+        <script src='js/slider.js'></script>
+        <script src='js/animate.js'></script>
+        <script src='js/cc.js'></script>
+        <script src='js/index.js'></script>
+    </head>
+    <body>
+    <!-- 头部 -->
+    <div class="header">
+      <div class="header-bg">
+        <div class="header-w w">
+          <div class="hd-lt fl">
+            <h1>
+              <a href="#">
+                <img src="imgs/logo1_f4dc8d8.png" height="39" width="243" alt="">
+              </a>
+            </h1>
+          </div>
+          <div class="hd-rt fr">
+            <div class="header-car fr">
+              <a href="#">
+                <span>购物车</span>
+                <em>(0)</em>
+                <i class='icons icons-car'></i>
+              </a>
+              <div class="header-carBox">
+                <div class="car-empty">购物车中还没有商品，赶紧选购吧</div>
+              </div>
+            </div>
+            <div class="header-search fr">
+              <form action="#">
+                <div class="search clearfix">
+                  <input type="text" class='searchInput' id='search_input' value="请输入关键字">
+                  <input type="submit" class='searchSubmit icons' value="">
+
+                </div>
+                  <div class="searchKey"><a href="#">360手机</a></div>
+              </form>
+            </div>
+            <ul class="header-nav fr">
+              <li><a href="#">首页</a></li>
+              <li><a href="#">360手机</a></li>
+              <li>
+                <a href="#">Note3高配版</a>
+                <i class='icons icons-hots'></i>
+              </li>
+              <li>
+                <a href="#">Q码通道</a>
+                <i class='icons icons-hots'></i>
+              </li>
+              <li><a href="#">360OS</a></li>
+              <li><a href="#">服务</a></li>
+              <li><a href="#">社区</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="navguid">
+        <div class="navcontain">
+         <ul class='nav-rt fr'>
+           <li id='webSearch'>
+               <a href="#">网站导航</a>
+               <div class="nav" id='Nav' style="left: -289px; display: none;">
+                 <div class="topnav">
+                   <dl>
+                     <dd><a href="#" target="_blank">360手机</a></dd>
+                     <dd>
+                       <a href="#" target="_blank">360奇酷极客版<span class="new-small"></span></a>
+                     </dd>
+                     <dd>
+                       <a href="#" target="_blank">  360奇酷旗舰版<span class="hot-small"></span></a>
+                     </dd>
+                     <dd>
+                       <a href="#" target="_blank">360奇酷青春版<span class="hot-small"></span></a>
+                     </dd>
+                   </dl>
+                   <dl>
+                     <dd><a href="#" target="_blank">大神手机</a></dd>
+                     <dd>
+                       <a href="#" target="_blank">Note3高配版<span class="hot-small"></span></a>
+                     </dd>
+                     <dd><a href="#" target="_blank">大神F2</a></dd>
+                     <dd><a href="#" target="_blank">大神X7</a></dd>
+                     <dd><a href="#">合约机</a></dd>
+                   </dl>
+                   <dl>
+                     <dd><a href="#" target="_blank">保护类</a></dd>
+                     <dd><a href="#" target="_blank">皮套</a></dd>
+                     <dd><a href="#" target="_blank">保护膜</a></dd>
+                     <dd><a href="#" target="_blank">后壳</a></dd>
+                   </dl>
+                   <dl>
+                     <dd><a href="#" target="_blank">能源类</a></dd>
+                     <dd><a href="#" target="_blank">电池</a></dd>
+                     <dd><a href="#" target="_blank">移动电源</a></dd>
+                     <dd><a href="#" target="_blank">充电宝</a></dd>
+                   </dl>
+                   <dl>
+                     <dd><a href="#" target="_blank">耳机与音响</a></dd>
+                     <dd><a href="#" target="_blank">蓝牙耳机</a></dd>
+                     <dd><a href="#" target="_blank">线控耳机</a></dd>
+                     <dd><a href="#" target="_blank">蓝牙音箱</a></dd>
+                   </dl>
+                   <dl>
+                     <dd><a href="javascript:;">精彩频道</a></dd>
+                     <dd><a href="javascript:;">其他周边</a></dd>
+                     <dd><a href="http://www.qiku.com/" target="_blank">大学生分期购</a></dd>
+                     <dd><a href="http://www.qiku.com/" target="_blank">以旧换新</a></dd>
+                   </dl>
+                 </div>
+               </div>
+               <i class='icons icons-arr'></i>
+           </li>
+           <li>
+               <span id='APK_load'>
+                 <a href="#"> 商城APK下载</a>
+                 <div class="children-item" id='childrenItem' style="left: -159px; display: none;">
+                   <div class="item-arrow-up" style="left:42%"></div>
+                   <div class="apkdown">
+                     <div class="apkdown-l">
+                       <div class="apk-logo">
+                         <a target="_blank" href="http://res.qiku.com/plaform/apk/CP_QikuShop.apk">
+                           <img alt="奇酷 apk logo" class="img-loading" data-src="imgs/apk-logo_244bc3e.jpg" src="imgs/apk-logo_244bc3e.jpg">
+                         </a>
+                       </div>
+                       <ul>
+                         <li>
+                         <span>名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</span><b>奇酷商城</b></li>
+                         <li><span>大&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小：</span><b>4.2 MB</b></li>
+                         <li><span>版&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本：</span><b>1.4.3</b></li>
+                       </ul>
+                       <p>介绍：奇酷商城是奇酷网的Android手机客户端。您可以随时随地通过手机购买商品、查询订单、搜索商品信息、查看物流状态、评价喜欢的商品。</p>
+                     </div>
+                     <div class="apkdown-r">
+                        <img class="img-loading" data-src="imgs/apk-down_13ca91b.jpg" alt="扫一扫下载apk" src="imgs/apk-down_13ca91b.jpg">
+                        <p>扫一扫下载</p>
+                     </div>
+                   </div>
+                 </div>
+               </span>
+               <span id='shopWap'>
+                <a href="#">商城wap版</a>
+                <div class="children-item" id='childrenitem' style="display:none; left:80px;">
+                   <div class="item-arrow-up"></div>
+                   <img alt="商城手机版" class="img-loading" data-src="images/m_shop_ewm_ddded76.jpg" src="imgs/m_shop_ewm_ddded76.jpg">
+                </div>
+               </span>
+               <span><a href="#">官方微信</a></span>
+               <span>
+               <a href="#">奇酷云</a>
+               <i class='icons icons-cloud'></i>
+               </span>
+           </li>
+           <li><a href="#">大学生分期</a></li>
+           <li><a href="#">随心保</a></li>
+           <li><a href="#">我的订单</a></li>
+           <li>
+              <a href="#">登录</a>
+              <a href="#">注册</a>
+              <a href="#">忘记密码？</a>
+           </li>
+           <li><a href="#">免注册订单查询</a></li>
+         </ul>
+         <div class="nav-lt fl">
+            <a href="#">全部商品分类 <i class="icons icons-arr"></i></a>
+
+            <ul class="nav-product">
+              <li>
+                <h3><a href="#">360手机</a></h3>
+                <a href="#">极客版</a>
+                <a href="#">旗舰版</a>
+                <a href="#">青春版</a>
+              </li>
+              <li>
+                <h3><a href="#">大神手机</a></h3>
+                <a href="#">大神Note3</a>
+                <a href="#">大神X7</a>
+                <a href="#">大神F2</a>
+                <a href="#">合约机</a>
+              </li>
+             <li>
+
+                <h3><a href="#">360智能硬件</a></h3>
+                <a href="#">儿童卫士</a>
+                <a href="#">行车记录仪</a>
+                <a href="#"> 安全路由</a>
+                <!-- <a href="#">超级WIFI</a> -->
+              </li>
+              <li>
+                <h3><a href="#">保护类</a></h3>
+                <a href="#">皮套</a>
+                <a href="#"> 保护膜</a>
+                <a href="#">后壳</a>
+              </li>
+             <li>
+
+                <h3><a href="#">能源类</a></h3>
+                <a href="#">电池</a>
+                <a href="#">移动电源</a>
+                <a href="#">充电器</a>
+              </li>
+             <li>
+                <h3><a href="#">耳机与音箱</a></h3>
+                <a href="#">蓝牙耳机</a>
+                <a href="#">线控耳机</a>
+                <a href="#">蓝牙音箱</a>
+              </li>
+             <li>
+                <h3><a href="#">奇酷特色</a></h3>
+                <a href="#">大神文化</a>
+                <a href="#">以旧换新</a>
+                <a href="#">大学生分期购</a>
+              <li>
+                <h3><a href="#">个性化配件</a></h3>
+                <a href="#">数码配件</a>
+                <a href="#">创意配件</a>
+                <a href="#">智能硬件</a>
+              </li>
+            </ul>
+         </div>
+        </div>
+      </div>
+    </div>
+    <!-- 、轮播图部分 -->
+    <div class="product-show w">
+      <div class="productSlider" id='productSlider'>
+        <ul class="slider-img" id='sliderImg'>
+          <li><a href="#"><img src="imgs/1444726456354yjhx1013.png" height="413" width="965" alt=""></a></li>
+          <li><a href="#"><img src="imgs/1452763677213pcbanneryidongdinzhi0114.jpg" height="413" width="965" alt=""></a></li>
+          <li><a href="#"><img src="imgs/1452849683739jigndongweixiu115.jpg" height="413" width="965" alt=""></a></li>
+          <li><a href="#"><img src="imgs/1453777283379jk22pcd.jpg" height="413" width="965" alt=""></a></li>
+          <li><a href="#"><img src="imgs/1453782659414nh126pc.jpg" height="413" width="965" alt=""></a></li>
+          <li><a href="#"><img src="imgs/1453782745674n3pro126.jpg" height="413" width="965" alt=""></a></li>
+          <li><a href="#"><img src="imgs/1453951364387notice.jpg" height="413" width="965" alt=""></a></li>
+          <li><a href="#"><img src="imgs/1453981089893pcbanner128.jpg" alt=""></a></li>
+        </ul>
+        <div class="arrow" id='arrow'>
+          <a href="javascript:;" class="btn_arrow btn_prev" id='pre'>&nbsp;</a>
+          <a href="javascript:;" class="btn_arrow btn_next" id='next'>&nbsp;</a>
+        </div>
+        <ul class='slider-point' id='sliderPiont'>
+          <li class='current'></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="product-small">
+        <ul>
+          <li><a href="#"><img src="imgs/1451897720696xiaojiaodiann3.png" height="150" width="321" alt=""></a></li>
+          <li><a href="#"><img src="imgs/14507506393591450236509206f21216111.png" height="150" width="321" alt=""></a></li>
+          <li><a href="#"><img src="imgs/14507506579091450236535900yisong1w.png" height="150" width="321" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 主要内容部分 -->
+    <div class="maincontent">
+      <div class="mainContent w">
+      <!-- 新品推荐 -->
+      <h4 class='product-explore-title'>
+        <span class="gift-box"><img src="imgs/monkey.png" height="44" width="40" alt=""></span>
+        新品推荐
+      </h4>
+      <div class="newProduct">
+        <ul class="tebietuijian clearfix">
+          <li><a href="#"><img src="imgs/14527611965181450746346923newxiaoq1222.jpg" height="360" width="360" alt=""></a></li>
+          <li><a href="#"><img src="imgs/1453771414552xpjk126pc.jpg" height="360" width="360" alt=""></a></li>
+          <li><a href="#"><img src="imgs/1453773305010xpn3126.jpg" height="360" width="360" alt=""></a></li>
+        </ul>
+      </div>
+      <!-- 畅销产品 -->
+      <h4 class='product-explore-title'>
+        <span class="gift-box"><img src="imgs/monkey.png" height="44" width="40" alt=""></span>
+        畅销产品
+        <div class="more prod-good-sale-1">
+          <a href="javascript:;" class="arrow_prev" id='arr-pre'></a>
+          <a href="javascript:;" class="arrow_next" id='arr-next'></a>
+        </div>
+      </h4>
+      <div class="prod-good-sale w">
+        <ul class='clearfix'>
+          <li>
+            <a href="#">
+              <img src="imgs/10299.jpg"  alt="">
+              <b>大神F2移动4G定制版（智尚白)</b>
+              <br>
+              <p><i>699元</i></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/10996.jpg"  alt="">
+              <b>大神F2移动4G定制版（智尚白)</b>
+              <br>
+              <p><i>699元</i></p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/10299.jpg"  alt="">
+              <b>大神F2移动4G定制版（智尚白)</b>
+              <br>
+              <p><i>699元</i></p>
+            </a>
+          </li>
+           <li>
+            <a href="#">
+              <img src="imgs/10299.jpg"  alt="">
+              <b>大神F2移动4G定制版（智尚白)</b>
+              <br>
+              <p><i>699元</i></p>
+            </a>
+          </li>
+           <li>
+            <a href="#">
+              <img src="imgs/10299.jpg"  alt="">
+              <b>大神F2移动4G定制版（智尚白)</b>
+              <br>
+              <p><i>699元</i></p>
+            </a>
+          </li>
+           <li>
+            <a href="#">
+              <img src="imgs/10299.jpg" alt="">
+              <b>大神F2移动4G定制版（智尚白)</b>
+              <br>
+              <p><i>699元</i></p>
+            </a>
+          </li>
+           <li>
+            <a href="#">
+              <img src="imgs/10299.jpg"  alt="">
+              <b>大神F2移动4G定制版（智尚白)</b>
+              <br>
+              <p><i>699元</i></p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- 精美配件  -->
+      <h4 class='product-explore-title'>
+        <span class="gift-box"><img src="imgs/monkey.png" height="44" width="40" alt=""></span>
+         精美配件
+      </h4>
+      <div class="prod-good-lingjian clearfix">
+        <div class="lingjian-left">
+          <span class='lingjian-one clearfix'>
+            <a href="#">
+              <div class="lingjian-one-l fl">
+                <h3 >锌风暴耳机珍珠银</h3>
+                <p class="lingjian-one-text">锌风暴耳机(珍珠银)</p>
+                <p class="lingjian-one-yen">129元</p>
+              </div>
+              <div class="lingjian-one-r fr">
+                <img src="imgs/10801.jpg" alt="锌风暴耳机(珍珠银)">
+              </div>
+            </a>
+          </span>
+          <span>
+            <a class="jinping-a">
+              <div class="imgs">
+                <img src="imgs/10801_1.jpg" alt="大神炫音耳机">
+              </div>
+              <p class="jinping-title">大神炫音耳机</p>
+              <p class="jinping-yen">49元</p>
+            </a>
+          </span>
+          <span>
+            <a class="jinping-a">
+              <div class="imgs">
+                <img src="imgs/10801_1.jpg" alt="大神炫音耳机">
+              </div>
+              <p class="jinping-title">大神炫音耳机</p>
+              <p class="jinping-yen">49元</p>
+            </a>
+          </span>
+          <span>
+            <a class="jinping-a">
+              <div class="imgs">
+                <img src="imgs/10801_1.jpg" alt="大神炫音耳机">
+              </div>
+              <p class="jinping-title">大神炫音耳机</p>
+              <p class="jinping-yen">49元</p>
+            </a>
+          </span>
+          <span>
+            <a class="jinping-a">
+              <div class="imgs">
+                <img src="imgs/10801_1.jpg" alt="大神炫音耳机">
+              </div>
+              <p class="jinping-title">大神炫音耳机</p>
+              <p class="jinping-yen">49元</p>
+            </a>
+          </span>
+          <span>
+            <a class="jinping-a">
+              <div class="imgs">
+                <img src="imgs/10801_1.jpg" alt="大神炫音耳机">
+              </div>
+              <p class="jinping-title">大神炫音耳机</p>
+              <p class="jinping-yen">49元</p>
+            </a>
+          </span>
+          <span>
+            <a class="jinping-a">
+              <div class="imgs">
+                <img src="imgs/10801_1.jpg" alt="大神炫音耳机">
+              </div>
+              <p class="jinping-title">大神炫音耳机</p>
+              <p class="jinping-yen">49元</p>
+            </a>
+          </span>
+          <span>
+            <a class="jinping-a">
+              <div class="imgs">
+                <img src="imgs/10801_1.jpg" alt="大神炫音耳机">
+              </div>
+              <p class="jinping-title">大神炫音耳机</p>
+              <p class="jinping-yen">49元</p>
+            </a>
+          </span>
+        </div>
+        <div class="lingjian-right">
+          <span class='lingjian-paihang'></span>
+          <ul class='paihang-mingxi'>
+            <li>
+              <a href="http://www.qiku.com/goods/4026.html" title="QiKU 10000mAh移动电源">
+                  <img src="imgs/9216.png" alt="QiKU 10000mAh移动电源">
+                  <b class="sp">1</b>
+                  <span>QiKU 10000mAh移动电源<br><em><i>69</i>元</em></span>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.qiku.com/goods/4007.html" title="QiKU 5000mAh移动电源">
+                   <img src="imgs/8630.png" alt="QiKU 5000mAh移动电源">
+                   <b class="sp">2</b>
+                   <span>QiKU 5000mAh移动电源<br><em><i>49</i>元</em></span>
+              </a>
+            </li>
+            <li>
+               <a href="http://www.qiku.com/goods/3793.html" title="大神双动力耳机(黑色)">
+                  <img src="imgs/8630_1.png" alt="大神双动力耳机(黑色)">
+                  <b class="sp">3</b>
+                  <span>大神双动力耳机(黑色)<br><em><i>49</i>元</em></span>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.qiku.com/goods/4008.html" title="大神Note3钢化保护贴膜">
+                  <img src="imgs/9296.png" alt="大神Note3钢化保护贴膜">
+                  <b>4</b>
+                  <span>大神Note3钢化保护贴膜<br><em><i>14.9</i>元</em></span>
+               </a>
+             </li>
+             <li>
+               <a href="http://www.qiku.com/goods/4015.html" title="大神Note3磨砂保护壳(蓝)" class="noborder1" target="_blank">
+                   <img src="imgs/9315.png" alt="大神Note3磨砂保护壳(蓝)">
+                   <b>5</b>
+                   <span>大神Note3磨砂保护壳(蓝)<br><em><i>29</i>元</em></span>
+               </a>
+             </li>
+             <li>
+               <a href="http://www.qiku.com/goods/3928.html" title="大神淳音耳机(银色)">
+                  <img src="imgs/8632.png" alt="大神淳音耳机(银色)">
+                  <b>6</b>
+                  <span>大神淳音耳机(银色)<br><em><i>99</i>元</em></span>
+               </a>
+              </li>
+              <li>
+                <a href="http://www.qiku.com/goods/4148.html" title="奇酷手机青春版钢化膜">
+                  <img src="imgs/9977.png" alt="奇酷手机青春版钢化膜">
+                  <b>7</b>
+                  <span>奇酷手机青春版钢化膜<br><em><i>39</i>元</em></span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.qiku.com/goods/4093.html" title="奇酷手机青春版保护壳(白)">
+                   <img src="imgs/9977_1.png" alt="奇酷手机青春版保护壳(白)">
+                   <b>8</b>
+                   <span>奇酷手机青春版保护壳(白)<br><em><i>29</i>元</em></span>
+                 </a>
+               </li>
+          </ul>
+
+        </div>
+      </div>
+      <!-- 特价商品部分 -->
+      <h4 class='product-explore-title'>
+        <span class="gift-box"><img src="imgs/monkey.png" height="44" width="40" alt=""></span>
+        特价商品
+      </h4>
+      <div class="prod-tejia" id="prod_tejia">
+        <div class="tebieshangpin">
+          <a target="_blank" href="http://www.qiku.com/goods/2897.html" title="大神F2移动4G公开版（智尚白）">
+            <span>大神F2移动4G公开版（智尚白）</span>
+            <br>
+            <i><b>699</b>元</i>
+            <div class="prod-tejia-img">
+             <img src="imgs/11032.jpg" alt="大神F2移动4G公开版（智尚白）">
+            </div>
+          </a>
+        </div>
+        <div class="tebieshangpin">
+          <a target="_blank" href="http://www.qiku.com/goods/2897.html" title="大神F2移动4G公开版（智尚白）">
+            <span>大神F2移动4G公开版（智尚白）</span>
+            <br>
+            <i><b>699</b>元</i>
+            <div class="prod-tejia-img">
+             <img src="imgs/11032.jpg" alt="大神F2移动4G公开版（智尚白）">
+            </div>
+          </a>
+        </div>
+        <div class="tebieshangpin">
+          <a target="_blank" href="http://www.qiku.com/goods/2897.html" title="大神F2移动4G公开版（智尚白）">
+            <span>大神F2移动4G公开版（智尚白）</span>
+            <br>
+            <i><b>699</b>元</i>
+            <div class="prod-tejia-img">
+             <img src="imgs/11032.jpg" alt="大神F2移动4G公开版（智尚白）">
+            </div>
+          </a>
+        </div>
+        <div class="tebieshangpin">
+          <a target="_blank" href="http://www.qiku.com/goods/2897.html" title="大神F2移动4G公开版（智尚白）">
+            <span>大神F2移动4G公开版（智尚白）</span>
+            <br>
+            <i><b>699</b>元</i>
+            <div class="prod-tejia-img">
+             <img src="imgs/11032.jpg" alt="大神F2移动4G公开版（智尚白）">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 底部部分 -->
+    <div id="mod_footer" class="mod_footer">
+      <ul class="foot-service w">
+          <li>
+            <a href="http://www.qiku.com/help-4.html" target="_blank">
+              <i class="icon-tui"></i>
+              <span>7天退货保障</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.qiku.com/help-4.html" target="_blank">
+              <i class="icon-huan"></i>
+              <span>15天换货保障</span>
+             </a>
+          </li>
+          <li>
+             <a href="http://www.qiku.com/help-6.html" target="_blank">
+               <i class="icon-you"></i>
+               <span>100元起免邮费</span>
+             </a>
+          </li>
+          <li>
+             <a href="http://www.qiku.com/help-19.html" target="_blank">
+               <i class="icon-wei"></i>
+               <span>680余家售后网点</span>
+             </a>
+          </li>
+         </ul>
+      <div class="shop-guid-list w">
+          <div class="weixingongzhonghao">
+            <img src="imgs/weixingongzhonghao.jpg" alt="微信公众号">
+          </div>
+          <dl>
+             <dd>
+               <b>购物指南</b>
+               <ul>
+                 <li><a href="http://www.qiku.com/help-1.html" target="_blank">购物流程</a></li>
+                 <li><a href="http://www.qiku.com/help-16.html" target="_blank">优惠券</a></li>
+                 <li><a href="http://www.qiku.com/help-5.html" target="_blank">常见问题</a></li>
+               </ul>
+             </dd>
+             <dd>
+               <b>关于支付</b>
+               <ul>
+                 <li><a href="http://www.qiku.com/help-11.html" target="_blank">支付方式</a></li>
+                 <li><a href="http://www.qiku.com/help-12.html" target="_blank">关于发票</a></li>
+               </ul>
+             </dd>
+             <dd>
+               <b>配送说明</b>
+               <ul>
+                 <li><a href="http://www.qiku.com/help-6.html" target="_blank">配送方式</a></li>
+                 <li><a href="http://www.qiku.com/help-8.html" target="_blank">签收说明</a></li>
+               </ul>
+             </dd>
+             <dd>
+               <b>售后服务</b>
+               <ul>
+                 <li><a href="http://www.qiku.com/help-4.html" target="_blank">售后政策</a></li>
+                 <li><a href="#" target="_blank">奇酷特色服务</a></li>
+                 <li><a href="http://www.qiku.com/help-20.html" target="_blank">奇酷手机盗抢险</a></li>
+                 <li><a href="http://www.qiku.com/help-19.html" target="_blank">服务网点查询</a></li>
+               </ul>
+             </dd>
+             <dd>
+               <b>关注我们</b>
+               <ul>
+                 <li><a href="http://weibo.com/u/3203298121" target="_blank">客服微博</a></li>
+                 <li><a href="http://www.qiku.com/about" target="_blank">联系我们</a></li>
+                 <li class="H-bottom-icon">
+                   <a href="http://weibo.com/360tegong/" target="_blank" class="sina">
+                    <b></b>
+                   </a>
+                   <a href="javascript:void(0)" class="weixin">
+                    <b></b>
+                   </a>
+                 </li>
+               </ul>
+             </dd>
+          </dl>
+          <div class="server">
+           <ul>
+             <li class="telephone"><i class="icons ico-tel-server"></i>商城购物咨询：400-011-1366&nbsp;(仅收市话费)</li>
+             <li>售后服务热线：400-011-1388</li>
+             <li>周一到周日&nbsp;09:00-21:00</li>
+             <li>顺丰热线：95338</li>
+             <li>宅急送热线：400-678-9000</li>
+             <li>&nbsp;</li>
+             <li class="online online_service"><a href="javascript:void(0)">导购在线</a></li>
+           </ul>
+          </div>
+      </div>
+      <div class="footer w">
+        <div>
+          <a href="http://www.qiku.com/index.html">首页</a>
+          <span class="line">|</span>
+          <a href="http://cloud.qiku.com">奇酷云</a>
+          <span class="line">|</span>
+          <a href="http://www.qiku.com/help-4.html">服务支持</a>
+          <span class="line">|</span>
+          <a href="http://bbs.qiku.com">奇酷社区</a>
+          <span class="line">|</span>
+          <a href="http://www.qiku.com/about/contactus.html">联系我们</a>
+          <div class="select-language">
+             <span><i class="icons icons-zh-cn"></i>简体中文</span>
+             <i class="icons icons-arr"></i>
+             <ul>
+              <li><a href="http://www.qiku.com/en"><i class="icons icons-en"></i>English</a></li>
+              <li><a href="http://www.qiku.com/hk"><i class="icons icons-hk"></i>繁体中文</a></li>
+              <li><a href="http://www.qiku.com"><i class="icons icons-russia"></i>Россия</a></li>
+              <li><a href="http://www.qiku.com/in"><i class="icons icons-india"></i>India</a></li>
+              <li><a href="javascript:;"><i class="icons icons-zh-cn"></i>简体中文</a></li>
+             </ul>
+          </div>
+        </div>
+        <p>法律声明|备案证号：京ICP备11014623号-6&nbsp;&nbsp;&nbsp;&nbsp;© 版权2012-2020 奇酷互联网络科技(深圳)有限公司</p>
+      </div>
+    </div>
+    </body>
+</html>
